@@ -11,6 +11,8 @@ This demo sets up 2 local, single-broker Kafka clusters and one MirrorMaker inst
 
 ## Set up
 
+1. Clone this repository and `cd` into the directory.
+
 1. Download a [Kafka release](https://kafka.apache.org/downloads) and extract it to a `./kafka/`.
 
 1. Clean up, if you've run this before.
