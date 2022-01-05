@@ -38,8 +38,8 @@ This demo sets up 2 local, single-broker Kafka clusters and one MirrorMaker 2.0 
 1. Create topics.
 
     ```sh
-    kafka/bin/kafka-topics.sh --create --topic t1 --bootstrap-server localhost:9091
-    kafka/bin/kafka-topics.sh --create --topic t2 --bootstrap-server localhost:9092
+    kafka/bin/kafka-topics.sh --create --topic t1 --bootstrap-server localhost:9091 --partitions 1 --replication-factor 1
+    kafka/bin/kafka-topics.sh --create --topic t2 --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
     ```
 
 1. Start MirrorMaker.
